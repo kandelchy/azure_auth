@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @info.name
+%p
+  %b Phone:
+  = @info.phone
+
+= link_to 'Edit', edit_info_path(@info)
+\|
+= link_to 'Back', infos_path
